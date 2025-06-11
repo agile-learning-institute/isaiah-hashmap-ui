@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HashMap & HashSet UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>HashMap</h2>
+    <input type="text" id="mapKey" placeholder="Key">
+    <input type="text" id="mapValue" placeholder="Value">
+    <button onclick="mapSet()">Set</button>
+    <button onclick="mapGet()">Get</button>
+    <button onclick="mapRemove()">Remove</button>
+    <button onclick="mapClear()">Clear</button>
+    <button onclick="mapShowAll()">Show All</button>
+    <div id="mapOutput" class="output"></div>
+
+    <h2>HashSet</h2>
+    <input type="text" id="setKey" placeholder="Key">
+    <button onclick="setAdd()">Add</button>
+    <button onclick="setRemove()">Remove</button>
+    <button onclick="setHas()">Has</button>
+    <button onclick="setClear()">Clear</button>
+    <button onclick="setShowAll()">Show All</button>
+    <div id="setOutput" class="output"></div>
+
+    <h2>Unit Tests</h2>
+    <button onclick="runTests()">Run Tests</button>
+    <div id="testOutput" class="output"></div>
+  </div>
+  <script src="hash.js"></script>
+</body>
+</html>
